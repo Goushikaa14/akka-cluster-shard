@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package com.example.akka.protobuf;
+
+option java_package = "com.example.akka.message";
+
+message EmployeeCommand {
+    string id = 1;
+    string name = 2;
+    string designation = 3;
+    CommandType type = 4;
+
+    enum CommandType {
+        QUERY = 0;
+        UPDATE = 1;
+        CREATE = 2;
+        DELETE = 3;
+    }
+}
+
+message Employee {
+    string id = 1;
+    string name = 2;
+    string designation = 3;
+}
