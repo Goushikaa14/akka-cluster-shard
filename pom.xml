@@ -16,7 +16,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <akka.version>2.6.13</akka.version>
+        <akka.version>2.6.6</akka.version>
     </properties>
     <dependencies>
         <dependency>
